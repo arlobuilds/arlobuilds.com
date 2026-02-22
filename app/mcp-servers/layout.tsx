@@ -96,7 +96,7 @@ export default function McpServersLayout({
                 name: "Do MCP servers work with ChatGPT?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Not directly. MCP is an open standard created by Anthropic. It's natively supported by Claude Desktop, Claude Code, Cursor, VS Code (Copilot), and Windsurf. ChatGPT uses its own plugin/function-calling system.",
+                  text: "Yes. OpenAI has adopted MCP support for ChatGPT and the Agents SDK. MCP is also natively supported by Claude Desktop, Claude Code, Cursor, VS Code (GitHub Copilot), Windsurf, and more.",
                 },
               },
               {
@@ -121,6 +121,30 @@ export default function McpServersLayout({
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "You can build MCP servers in TypeScript, Python, or any language. The official SDK (@modelcontextprotocol/sdk) provides the TypeScript framework. A basic server can be built in under 100 lines of code.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Which MCP servers does Claude Code support?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Claude Code supports all MCP servers. It uses the same configuration format as Claude Desktop (claude_desktop_config.json). Claude Code also has several built-in capabilities that overlap with some MCP servers like file access and web fetch.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Why are MCP servers slow sometimes?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "MCP servers run locally and communicate via stdio. Slowness usually comes from first-run npx install downloading packages, the external service being slow such as large database queries, or running too many servers simultaneously. The servers themselves add minimal overhead.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How often are new MCP servers released?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The ecosystem is growing rapidly. New community servers appear daily on npm and GitHub. The official MCP repository focuses on a small set of reference implementations, while the broader ecosystem at mcpservers.org lists 3,000+ servers.",
                 },
               },
             ],
