@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [{ url: "/og/cursor-alternatives.png", width: 1200, height: 630, alt: "Best Cursor Alternatives 2026" }],
   },
+  twitter: {
+    images: ["/og/cursor-alternatives.png"],
+  },
 };
 
 const tools = [

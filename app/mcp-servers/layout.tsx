@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [{ url: "/og/mcp-servers.png", width: 1200, height: 630, alt: "Best MCP Servers 2026: 25 Tested & Ranked" }],
   },
+  twitter: {
+    images: ["/og/mcp-servers.png"],
+  },
 };
 
 const servers = [

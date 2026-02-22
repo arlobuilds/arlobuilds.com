@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [{ url: "/og/mcp-servers-claude-code.png", width: 1200, height: 630, alt: "Best MCP Servers for Claude Code" }],
   },
+  twitter: {
+    images: ["/og/mcp-servers-claude-code.png"],
+  },
 };
 
 const servers = [

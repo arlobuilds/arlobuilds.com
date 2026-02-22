@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [{ url: "/og/seedance-pricing.png", width: 1200, height: 630, alt: "Seedance 2.0 Pricing Guide" }],
   },
+  twitter: {
+    images: ["/og/seedance-pricing.png"],
+  },
 };
 
 export default function SeedancePricingLayout({
