@@ -508,6 +508,18 @@ export default function CursorAlternativesPage() {
             >
               <span>→</span> Best MCP Servers for Claude Code
             </a>
+            <a
+              href="/mcp-servers-cursor"
+              className="flex items-center gap-2 text-sm text-[var(--accent)] hover:text-[var(--accent-light)] no-underline"
+            >
+              <span>→</span> Best MCP Servers for Cursor
+            </a>
+            <a
+              href="/ai-agent-frameworks"
+              className="flex items-center gap-2 text-sm text-[var(--accent)] hover:text-[var(--accent-light)] no-underline"
+            >
+              <span>→</span> Best AI Agent Frameworks 2026
+            </a>
           </div>
         </div>
       </section>

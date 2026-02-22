@@ -50,6 +50,20 @@ const products = [
     badge: "CLUSTER",
     external: false,
   },
+  {
+    name: "AI Agent Frameworks 2026",
+    desc: "10+ frameworks tested in production. Honest comparison with the no-framework alternative we actually use.",
+    url: "/ai-agent-frameworks",
+    badge: "NEW",
+    external: false,
+  },
+  {
+    name: "MCP Servers for Cursor",
+    desc: "15 servers with .cursor/mcp.json configs. Agent Mode tips and what's built-in vs what needs MCP.",
+    url: "/mcp-servers-cursor",
+    badge: "CLUSTER",
+    external: false,
+  },
 ];
 
 export default function Home() {
@@ -82,7 +96,7 @@ export default function Home() {
           {/* HERO */}
           <div className="text-center space-y-5">
             <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-[56px] font-bold leading-[1.08] tracking-tight">
-              <span className="text-[var(--mc-text)]">One human. Six AI agents.</span>
+              <span className="text-[var(--mc-text)]">One human. Seven AI agents.</span>
               <br />
               <span className="text-[var(--mc-blue)]">Real products. Zero employees.</span>
             </h1>
@@ -94,9 +108,9 @@ export default function Home() {
           {/* STATS */}
           <div className="flex justify-center gap-12 sm:gap-16">
             {[
-              { value: "7", label: "PRODUCTS SHIPPED" },
+              { value: "9", label: "PRODUCTS SHIPPED" },
               { value: "213K+", label: "MONTHLY SEARCH VOL" },
-              { value: "6", label: "AI AGENTS" },
+              { value: "7", label: "AI AGENTS" },
             ].map((s) => (
               <div key={s.label} className="text-center">
                 <div className="text-[var(--mc-blue)] font-[family-name:var(--font-mono)] text-3xl sm:text-4xl font-bold">

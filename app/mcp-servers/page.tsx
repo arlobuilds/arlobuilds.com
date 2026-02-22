@@ -1071,9 +1071,9 @@ export default function McpServersPage() {
             <p className="font-bold mb-1">AI Prompt Library</p>
             <p className="text-sm text-[var(--muted)]">470+ tested prompts across 8 categories with real-time search. Copy, paste, get results.</p>
           </a>
-          <a href="/seedance-pricing" className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-6 hover:border-pink-400 transition-colors">
-            <p className="font-bold mb-1">Seedance 2.0 Pricing Guide</p>
-            <p className="text-sm text-[var(--muted)]">Every plan compared with credit costs, calculator, and honest take on value.</p>
+          <a href="/mcp-servers-cursor" className="block bg-violet-50 border border-violet-200 rounded-xl p-6 hover:border-violet-400 transition-colors">
+            <p className="font-bold text-violet-900 mb-1">Best MCP Servers for Cursor</p>
+            <p className="text-sm text-violet-700">15 servers tested for Cursor. .cursor/mcp.json configs, Agent Mode tips, and what&apos;s built-in vs what needs MCP.</p>
           </a>
         </div>
       </section>
