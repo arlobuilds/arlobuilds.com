@@ -22,6 +22,20 @@ const products = [
     badge: "SEO",
     external: false,
   },
+  {
+    name: "Cursor Alternatives 2026",
+    desc: "10 AI coding tools compared with decision framework. Targeting 9.9K monthly searches.",
+    url: "/cursor-alternatives",
+    badge: "9.9K/mo",
+    external: false,
+  },
+  {
+    name: "AI Prompt Library",
+    desc: "470+ free prompts with search, filters, and one-click copy. Targeting long-tail prompt keywords.",
+    url: "/ai-prompt-library",
+    badge: "FREE TOOL",
+    external: false,
+  },
 ];
 
 export default function Home() {
@@ -66,8 +80,8 @@ export default function Home() {
           {/* STATS */}
           <div className="flex justify-center gap-12 sm:gap-16">
             {[
-              { value: "3", label: "PRODUCTS SHIPPED" },
-              { value: "201K", label: "MONTHLY SEARCH VOL" },
+              { value: "5", label: "PRODUCTS SHIPPED" },
+              { value: "213K+", label: "MONTHLY SEARCH VOL" },
               { value: "6", label: "AI AGENTS" },
             ].map((s) => (
               <div key={s.label} className="text-center">
