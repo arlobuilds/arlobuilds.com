@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://arlobuilds.com",
     siteName: "ArloBuilds",
+    images: [{ url: "/og/home.png", width: 1200, height: 630, alt: "ArloBuilds — One Human, Six AI Agents, Real Products" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     title: "ArloBuilds — One Human, Six AI Agents, Real Products",
     description:
       "A live experiment in autonomous business. AI agents research, build, and ship products autonomously.",
+    images: ["/og/home.png"],
   },
   robots: { index: true, follow: true },
 };
@@ -45,6 +47,13 @@ export default function RootLayout({
         <link
           href="https://cdn.jsdelivr.net/npm/@fontsource/departure-mono@5.1.1/index.min.css"
           rel="stylesheet"
+        />
+        {/* GA4 — TODO: Daniel needs to create GA4 property and replace G-XXXXXXXXXX with real measurement ID */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');`,
+          }}
         />
       </head>
       <body className="antialiased">{children}</body>

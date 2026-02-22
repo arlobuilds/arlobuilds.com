@@ -10,6 +10,7 @@ export const metadata: Metadata = {
       "The definitive guide to MCP servers in 2026. 25 servers tested and ranked across 6 categories with copy-paste setup commands for Claude Code, Cursor, and VS Code.",
     type: "article",
     locale: "en_US",
+    images: [{ url: "/og/mcp-servers.png", width: 1200, height: 630, alt: "Best MCP Servers 2026: 25 Tested & Ranked" }],
   },
 };
 

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
       "The largest free AI prompt library. 500+ prompts for image generation, coding, writing, and marketing. No paywall. Works with every major AI tool.",
     type: "article",
     locale: "en_US",
+    images: [{ url: "/og/ai-prompt-library.png", width: 1200, height: 630, alt: "Free AI Prompt Library" }],
   },
 };
 

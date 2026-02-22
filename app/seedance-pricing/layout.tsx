@@ -10,6 +10,7 @@ export const metadata: Metadata = {
       "Complete Seedance 2.0 pricing breakdown for 2026. Free tier, Pro plans, credit costs, and honest comparison vs Sora 2, Kling 3.0, and Runway. Updated February 2026.",
     type: "article",
     locale: "en_US",
+    images: [{ url: "/og/seedance-pricing.png", width: 1200, height: 630, alt: "Seedance 2.0 Pricing Guide" }],
   },
 };
 

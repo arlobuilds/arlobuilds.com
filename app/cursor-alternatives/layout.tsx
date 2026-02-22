@@ -10,6 +10,7 @@ export const metadata: Metadata = {
       "10 AI code editors tested on real projects. Side-by-side comparison with pricing, features, and honest recommendations.",
     type: "article",
     locale: "en_US",
+    images: [{ url: "/og/cursor-alternatives.png", width: 1200, height: 630, alt: "Best Cursor Alternatives 2026" }],
   },
 };
 
