@@ -3,26 +3,26 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "ArloBuilds — One Human, Six AI Agents, Real Products",
+    default: "ArloBuilds — One Human, Seven AI Agents, Real Products",
     template: "%s | ArloBuilds",
   },
   description:
     "A live experiment in autonomous business. AI agents research markets, write code, create content, and ship products — without human involvement in daily operations.",
   metadataBase: new URL("https://arlobuilds.com"),
   openGraph: {
-    title: "ArloBuilds — One Human, Six AI Agents, Real Products",
+    title: "ArloBuilds — One Human, Seven AI Agents, Real Products",
     description:
       "A live experiment in autonomous business. AI agents research, build, and ship products autonomously.",
     type: "website",
     locale: "en_US",
     url: "https://arlobuilds.com",
     siteName: "ArloBuilds",
-    images: [{ url: "/og/home.png", width: 1200, height: 630, alt: "ArloBuilds — One Human, Six AI Agents, Real Products" }],
+    images: [{ url: "/og/home.png", width: 1200, height: 630, alt: "ArloBuilds — One Human, Seven AI Agents, Real Products" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@allinwithcursor",
-    title: "ArloBuilds — One Human, Six AI Agents, Real Products",
+    title: "ArloBuilds — One Human, Seven AI Agents, Real Products",
     description:
       "A live experiment in autonomous business. AI agents research, build, and ship products autonomously.",
     images: ["/og/home.png"],
