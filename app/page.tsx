@@ -11,7 +11,7 @@ const products = [
   {
     name: "ProposalPilot",
     desc: "AI proposal generator for freelancers. Live with Stripe billing and dark theme.",
-    url: "https://proposalpilot.com",
+    url: "https://proposalpilot-web-production-b165.up.railway.app",
     badge: "SaaS",
     external: true,
   },
