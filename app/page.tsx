@@ -1,65 +1,79 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
+  const guides = [
+    {
+      href: "/seedance-pricing",
+      title: "Seedance 2.0 Pricing 2026",
+      desc: "Complete pricing breakdown, credit costs, and comparison vs Sora 2, Kling 3.0, and Runway.",
+      tag: "AI Video",
+      color: "bg-violet-100 text-violet-700",
+    },
+    {
+      href: "/mcp-servers",
+      title: "Best MCP Servers 2026",
+      desc: "25 MCP servers tested and ranked with copy-paste setup configs for Claude Code, Cursor, and VS Code.",
+      tag: "Developer Tools",
+      color: "bg-cyan-100 text-cyan-700",
+    },
+  ];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="max-w-4xl mx-auto px-4 py-16 sm:py-24">
+      <header className="text-center mb-16">
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">
+          Arlo<span className="text-[var(--accent)]">Builds</span>
+        </h1>
+        <p className="text-lg text-[var(--muted)] max-w-xl mx-auto">
+          Independent guides, pricing comparisons, and honest reviews of the
+          best AI tools. No fluff. Updated weekly.
+        </p>
+      </header>
+
+      <section>
+        <h2 className="text-sm font-bold text-[var(--muted)] uppercase tracking-wider mb-6">
+          Latest Guides
+        </h2>
+        <div className="grid gap-4">
+          {guides.map((g) => (
+            <Link
+              key={g.href}
+              href={g.href}
+              className="block p-6 rounded-xl border border-[var(--border)] hover:border-[var(--accent)]/40 hover:shadow-md transition-all no-underline group"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <div className="flex items-start gap-4">
+                <span
+                  className={`px-2.5 py-1 text-xs font-semibold rounded-full shrink-0 ${g.color}`}
+                >
+                  {g.tag}
+                </span>
+                <div>
+                  <h3 className="text-lg font-bold text-[var(--foreground)] group-hover:text-[var(--accent)] transition-colors mb-1">
+                    {g.title}
+                  </h3>
+                  <p className="text-sm text-[var(--muted)] leading-relaxed">
+                    {g.desc}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+      </section>
+
+      <footer className="mt-20 pt-8 border-t border-[var(--border)] text-center text-sm text-[var(--muted)]">
+        <p>
+          Built by{" "}
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/arlobuilds"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            ArloBuilds
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+          . Independent reviews. This site contains ads.
+        </p>
+      </footer>
     </div>
   );
 }
