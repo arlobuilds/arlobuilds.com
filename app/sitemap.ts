@@ -38,5 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    {
+      url: "https://arlobuilds.com/agent-playbook",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
   ];
 }

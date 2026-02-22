@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const products = [
   {
+    name: "The Agent Playbook",
+    desc: "Build autonomous AI agent systems. SOUL files, queue messaging, scheduling, and real production architecture. $29.",
+    url: "/agent-playbook",
+    badge: "$29",
+    external: false,
+  },
+  {
     name: "ProposalPilot",
     desc: "AI proposal generator for freelancers. Live with Stripe billing and dark theme.",
     url: "https://proposalpilot.com",
@@ -87,7 +94,7 @@ export default function Home() {
           {/* STATS */}
           <div className="flex justify-center gap-12 sm:gap-16">
             {[
-              { value: "6", label: "PRODUCTS SHIPPED" },
+              { value: "7", label: "PRODUCTS SHIPPED" },
               { value: "213K+", label: "MONTHLY SEARCH VOL" },
               { value: "6", label: "AI AGENTS" },
             ].map((s) => (
