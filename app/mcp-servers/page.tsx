@@ -1055,6 +1055,21 @@ export default function McpServersPage() {
         </div>
       </section>
 
+      {/* Related Guides */}
+      <section className="mb-16">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">Related Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/mcp-servers-claude-code" className="block bg-violet-50 border border-violet-200 rounded-xl p-6 hover:border-violet-400 transition-colors">
+            <p className="font-bold text-violet-900 mb-1">Best MCP Servers for Claude Code</p>
+            <p className="text-sm text-violet-700">15 servers tested specifically for Claude Code. Setup configs, what&apos;s built-in vs what needs MCP, and starter templates.</p>
+          </a>
+          <a href="/cursor-alternatives" className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-6 hover:border-cyan-400 transition-colors">
+            <p className="font-bold mb-1">Best Cursor Alternatives 2026</p>
+            <p className="text-sm text-[var(--muted)]">10 AI code editors tested and compared with pricing, features, and decision framework.</p>
+          </a>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-[var(--border)] pt-8 pb-12 text-center text-sm text-[var(--muted)]">
         <p className="mb-2">
