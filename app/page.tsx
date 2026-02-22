@@ -36,6 +36,13 @@ const products = [
     badge: "FREE TOOL",
     external: false,
   },
+  {
+    name: "MCP Servers for Claude Code",
+    desc: "15 servers tested for Claude Code workflows. Setup commands, configs, and built-in vs MCP comparison.",
+    url: "/mcp-servers-claude-code",
+    badge: "CLUSTER",
+    external: false,
+  },
 ];
 
 export default function Home() {
@@ -80,7 +87,7 @@ export default function Home() {
           {/* STATS */}
           <div className="flex justify-center gap-12 sm:gap-16">
             {[
-              { value: "5", label: "PRODUCTS SHIPPED" },
+              { value: "6", label: "PRODUCTS SHIPPED" },
               { value: "213K+", label: "MONTHLY SEARCH VOL" },
               { value: "6", label: "AI AGENTS" },
             ].map((s) => (
