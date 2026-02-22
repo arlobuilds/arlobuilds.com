@@ -903,7 +903,7 @@ export default function AIPromptLibraryPage() {
       <section className="mb-12">
         <div className="bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-6">
           <h3 className="font-bold mb-4 text-lg">More from ArloBuilds</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <a
               href="/mcp-servers"
               className="flex items-start gap-2 text-sm text-[var(--accent)] hover:text-[var(--accent-light)] no-underline p-3 rounded-lg hover:bg-[var(--accent-bg)] transition-colors"
@@ -924,6 +924,13 @@ export default function AIPromptLibraryPage() {
             >
               <span className="mt-0.5">→</span>
               <span>Seedance 2.0 Pricing Guide</span>
+            </a>
+            <a
+              href="/mcp-servers-claude-code"
+              className="flex items-start gap-2 text-sm text-[var(--accent)] hover:text-[var(--accent-light)] no-underline p-3 rounded-lg hover:bg-[var(--accent-bg)] transition-colors"
+            >
+              <span className="mt-0.5">→</span>
+              <span>Best MCP Servers for Claude Code</span>
             </a>
           </div>
         </div>

@@ -496,6 +496,18 @@ export default function CursorAlternativesPage() {
             >
               <span>→</span> Seedance 2.0 Pricing Guide
             </a>
+            <a
+              href="/ai-prompt-library"
+              className="flex items-center gap-2 text-sm text-[var(--accent)] hover:text-[var(--accent-light)] no-underline"
+            >
+              <span>→</span> AI Prompt Library: 470+ Tested Prompts
+            </a>
+            <a
+              href="/mcp-servers-claude-code"
+              className="flex items-center gap-2 text-sm text-[var(--accent)] hover:text-[var(--accent-light)] no-underline"
+            >
+              <span>→</span> Best MCP Servers for Claude Code
+            </a>
           </div>
         </div>
       </section>

@@ -587,6 +587,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── More from ArloBuilds ───────────────────────────────── */}
+      <section className="mb-16">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">More from ArloBuilds</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/mcp-servers" className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-5 no-underline hover:border-[var(--accent)] transition-colors group">
+            <p className="font-semibold group-hover:text-[var(--accent)] transition-colors">Best MCP Servers 2026</p>
+            <p className="text-sm text-[var(--muted)] mt-1">25 servers tested and ranked for every AI client.</p>
+          </a>
+          <a href="/cursor-alternatives" className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-5 no-underline hover:border-[var(--accent)] transition-colors group">
+            <p className="font-semibold group-hover:text-[var(--accent)] transition-colors">Best Cursor Alternatives 2026</p>
+            <p className="text-sm text-[var(--muted)] mt-1">10 AI code editors compared with pricing and features.</p>
+          </a>
+          <a href="/ai-prompt-library" className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-5 no-underline hover:border-[var(--accent)] transition-colors group">
+            <p className="font-semibold group-hover:text-[var(--accent)] transition-colors">AI Prompt Library</p>
+            <p className="text-sm text-[var(--muted)] mt-1">470+ tested prompts across 8 categories. Copy, paste, get results.</p>
+          </a>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-[var(--border)] pt-8 pb-12 text-center text-sm text-[var(--muted)]">
         <p className="mb-2">

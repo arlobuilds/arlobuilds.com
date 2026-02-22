@@ -1067,6 +1067,14 @@ export default function McpServersPage() {
             <p className="font-bold mb-1">Best Cursor Alternatives 2026</p>
             <p className="text-sm text-[var(--muted)]">10 AI code editors tested and compared with pricing, features, and decision framework.</p>
           </a>
+          <a href="/ai-prompt-library" className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-6 hover:border-emerald-400 transition-colors">
+            <p className="font-bold mb-1">AI Prompt Library</p>
+            <p className="text-sm text-[var(--muted)]">470+ tested prompts across 8 categories with real-time search. Copy, paste, get results.</p>
+          </a>
+          <a href="/seedance-pricing" className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-6 hover:border-pink-400 transition-colors">
+            <p className="font-bold mb-1">Seedance 2.0 Pricing Guide</p>
+            <p className="text-sm text-[var(--muted)]">Every plan compared with credit costs, calculator, and honest take on value.</p>
+          </a>
         </div>
       </section>
 

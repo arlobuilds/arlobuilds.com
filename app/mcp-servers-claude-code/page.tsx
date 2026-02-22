@@ -897,7 +897,7 @@ export default function McpServersClaudeCodePage() {
       {/* ── Internal Links ── */}
       <section className="mb-16">
         <h2 className="text-xl font-bold mb-4">More from ArloBuilds</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a
             href="/mcp-servers"
             className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-5 no-underline hover:border-violet-400 transition-colors group"
@@ -924,6 +924,15 @@ export default function McpServersClaudeCodePage() {
               Free AI Prompt Library
             </p>
             <p className="text-sm text-[var(--muted)] mt-1">470+ prompts for developers &amp; creators</p>
+          </a>
+          <a
+            href="/seedance-pricing"
+            className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-5 no-underline hover:border-pink-400 transition-colors group"
+          >
+            <p className="font-semibold group-hover:text-pink-700 transition-colors">
+              Seedance 2.0 Pricing Guide
+            </p>
+            <p className="text-sm text-[var(--muted)] mt-1">Every plan compared with credit costs and calculator</p>
           </a>
         </div>
       </section>
