@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best AI Agent Frameworks 2026: 10+ Tested in Production | ArloBuilds",
+  title: "Best AI Agent Frameworks 2026: 10+ Tested in Production",
   description:
     "We tested CrewAI, LangGraph, AutoGen, and more — then built a 7-agent system without any of them. Honest comparison with pricing, setup guides, and a production-tested alternative.",
   openGraph: {
