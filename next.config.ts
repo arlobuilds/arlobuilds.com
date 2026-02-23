@@ -1,6 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/recover-access",
+        destination: "/agent-playbook/access-issue",
+        permanent: true,
+      },
+      {
+        source: "/access-issue",
+        destination: "/agent-playbook/access-issue",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
