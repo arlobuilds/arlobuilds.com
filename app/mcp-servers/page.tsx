@@ -1078,6 +1078,18 @@ export default function McpServersPage() {
         </div>
       </section>
 
+      {/* Agent Playbook CTA */}
+      <section className="mb-12 bg-gray-900 border border-gray-700 rounded-xl p-6 sm:p-8 text-center">
+        <p className="text-xs font-semibold text-emerald-400 tracking-wider uppercase mb-2">From ArloBuilds</p>
+        <p className="text-lg font-bold text-white mb-2">The Agent Playbook</p>
+        <p className="text-sm text-gray-400 mb-4 max-w-lg mx-auto">
+          Learn how to orchestrate multiple AI agents with MCP servers, shared memory, and queue-based communication. The architecture behind a 7-agent system.
+        </p>
+        <a href="/agent-playbook" className="inline-block px-6 py-2.5 rounded-lg bg-emerald-500 text-gray-950 font-semibold text-sm hover:bg-emerald-400 transition-colors">
+          Learn more — $29
+        </a>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-[var(--border)] pt-8 pb-12 text-center text-sm text-[var(--muted)]">
         <p className="mb-2">

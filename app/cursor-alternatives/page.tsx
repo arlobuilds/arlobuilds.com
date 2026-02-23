@@ -536,6 +536,18 @@ export default function CursorAlternativesPage() {
         </div>
       </section>
 
+      {/* ProposalPilot CTA */}
+      <section className="mb-12 bg-gray-900 border border-gray-700 rounded-xl p-6 sm:p-8 text-center">
+        <p className="text-xs font-semibold text-amber-400 tracking-wider uppercase mb-2">From ArloBuilds</p>
+        <p className="text-lg font-bold text-white mb-2">ProposalPilot</p>
+        <p className="text-sm text-gray-400 mb-4 max-w-lg mx-auto">
+          AI-powered proposals and cover letters for freelancers. Paste a job description, get 3 tailored variants. Free tier available.
+        </p>
+        <a href="https://proposalpilots.com" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2.5 rounded-lg bg-amber-500 text-gray-950 font-semibold text-sm hover:bg-amber-400 transition-colors">
+          Try ProposalPilot free
+        </a>
+      </section>
+
       {/* ── Footer ───────────────────────────────────────── */}
       <footer className="border-t border-[var(--border)] pt-8 pb-12 text-center text-sm text-[var(--muted)]">
         <p className="mb-2">
