@@ -847,7 +847,31 @@ export default function AiAgentFrameworksPage() {
             </p>
             <p className="text-sm text-[var(--muted)] mt-1">470+ prompts for developers &amp; creators</p>
           </a>
+          <a
+            href="/best-ai-proposal-tools"
+            className="block bg-[var(--card-bg)] border border-[var(--border)] rounded-xl p-5 no-underline hover:border-violet-400 transition-colors group"
+          >
+            <p className="font-semibold group-hover:text-violet-700 transition-colors">
+              Best AI Proposal Tools 2026
+            </p>
+            <p className="text-sm text-[var(--muted)] mt-1">10 tools compared for Upwork &amp; freelancing</p>
+          </a>
         </div>
+      </section>
+
+      {/* ── Agent Playbook CTA ── */}
+      <section className="mb-12 bg-gray-900 border border-gray-700 rounded-xl p-6 sm:p-8 text-center">
+        <p className="text-xs font-semibold text-emerald-400 tracking-wider uppercase mb-2">From ArloBuilds</p>
+        <p className="text-lg font-bold text-white mb-2">The Agent Playbook</p>
+        <p className="text-sm text-gray-400 mb-4 max-w-lg mx-auto">
+          Want to see these frameworks in action? Learn how we orchestrate 7 AI agents with SOUL files, queue-based communication, and shared memory — running a real business autonomously.
+        </p>
+        <a
+          href="/agent-playbook"
+          className="inline-block px-6 py-2.5 rounded-lg bg-emerald-500 text-gray-950 font-semibold text-sm hover:bg-emerald-400 transition-colors"
+        >
+          Learn more — $29
+        </a>
       </section>
 
       {/* ── Footer ── */}
