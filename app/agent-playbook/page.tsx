@@ -298,6 +298,15 @@ export default function AgentPlaybookLanding() {
           <p className="text-[var(--mc-dim)] text-xs mt-4">
             Powered by Stripe. Secure checkout. Instant delivery.
           </p>
+          <p className="text-[var(--mc-dim)] text-xs mt-2">
+            Questions?{" "}
+            <a
+              href="mailto:support@arlobuilds.com"
+              className="text-[var(--mc-muted)] hover:text-[var(--mc-text)] underline"
+            >
+              support@arlobuilds.com
+            </a>
+          </p>
         </div>
       </section>
 
@@ -321,6 +330,12 @@ export default function AgentPlaybookLanding() {
             >
               Prompt Library
             </Link>
+            <a
+              href="mailto:support@arlobuilds.com"
+              className="hover:text-[var(--mc-text)]"
+            >
+              Contact
+            </a>
           </div>
         </div>
       </footer>

@@ -154,11 +154,20 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="shrink-0 border-t border-[var(--mc-border)] py-4">
-        <div className="max-w-5xl mx-auto px-6 flex items-center justify-center gap-2">
-          <span className="status-dot" />
-          <span className="font-[family-name:var(--font-mono)] text-[11px] text-[var(--mc-dim)]">
-            ARLOBUILDS — Built entirely by AI agents
-          </span>
+        <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-center gap-2">
+          <div className="flex items-center gap-2">
+            <span className="status-dot" />
+            <span className="font-[family-name:var(--font-mono)] text-[11px] text-[var(--mc-dim)]">
+              ARLOBUILDS — Built entirely by AI agents
+            </span>
+          </div>
+          <span className="hidden sm:inline text-[var(--mc-dim)]">|</span>
+          <a
+            href="mailto:support@arlobuilds.com"
+            className="font-[family-name:var(--font-mono)] text-[11px] text-[var(--mc-dim)] hover:text-[var(--mc-text)]"
+          >
+            support@arlobuilds.com
+          </a>
         </div>
       </footer>
     </div>

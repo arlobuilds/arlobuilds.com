@@ -13,16 +13,17 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
   const origin = getOrigin(request);
   const sessionId = url.searchParams.get("session_id");
-  const salesPage = new URL("/agent-playbook", origin);
 
   if (!sessionId) {
-    return NextResponse.redirect(salesPage);
+    return NextResponse.redirect(new URL("/agent-playbook", origin));
   }
 
   const stripeKey = process.env.STRIPE_SECRET_KEY;
   if (!stripeKey) {
-    console.error("STRIPE_SECRET_KEY not configured");
-    return NextResponse.redirect(salesPage);
+    console.error("STRIPE_SECRET_KEY not configured — buyer cannot get access");
+    const errorUrl = new URL("/agent-playbook/access-issue", origin);
+    errorUrl.searchParams.set("reason", "config");
+    return NextResponse.redirect(errorUrl);
   }
 
   try {
@@ -32,16 +33,28 @@ export async function GET(request: Request) {
     );
 
     if (!res.ok) {
-      return NextResponse.redirect(salesPage);
+      console.error("Stripe verification failed:", res.status);
+      const errorUrl = new URL("/agent-playbook/access-issue", origin);
+      errorUrl.searchParams.set("reason", "verification");
+      errorUrl.searchParams.set("session_id", sessionId);
+      return NextResponse.redirect(errorUrl);
     }
 
     const session = await res.json();
 
     if (session.payment_status !== "paid") {
-      return NextResponse.redirect(salesPage);
+      console.error("Payment not completed:", session.payment_status);
+      const errorUrl = new URL("/agent-playbook/access-issue", origin);
+      errorUrl.searchParams.set("reason", "unpaid");
+      return NextResponse.redirect(errorUrl);
     }
 
-    // Payment verified — set cookie and redirect to guide
+    console.log("PURCHASE_REDIRECT_VERIFIED", {
+      session_id: session.id,
+      customer_email: session.customer_details?.email,
+      timestamp: new Date().toISOString(),
+    });
+
     const response = NextResponse.redirect(
       new URL("/agent-playbook/guide", origin)
     );
@@ -49,12 +62,14 @@ export async function GET(request: Request) {
       httpOnly: true,
       secure: true,
       sameSite: "lax",
-      maxAge: 365 * 24 * 60 * 60, // 1 year
+      maxAge: 365 * 24 * 60 * 60,
       path: "/",
     });
     return response;
   } catch (error) {
     console.error("Stripe verification error:", error);
-    return NextResponse.redirect(salesPage);
+    const errorUrl = new URL("/agent-playbook/access-issue", origin);
+    errorUrl.searchParams.set("reason", "error");
+    return NextResponse.redirect(errorUrl);
   }
 }
