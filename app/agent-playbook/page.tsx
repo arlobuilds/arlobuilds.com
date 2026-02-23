@@ -140,6 +140,9 @@ export default function AgentPlaybookLanding() {
         <p className="text-[var(--mc-dim)] text-xs mt-3">
           One-time payment. Instant access. No subscription.
         </p>
+        <p className="text-[var(--mc-dim)] text-xs mt-1.5">
+          30-day money-back guarantee. Not happy? Full refund, no questions asked.
+        </p>
       </section>
 
       {/* PROOF POINTS */}
@@ -163,8 +166,11 @@ export default function AgentPlaybookLanding() {
         <h2 className="text-2xl font-bold mb-2 text-center">
           What&apos;s inside
         </h2>
-        <p className="text-[var(--mc-muted)] text-center text-sm mb-10">
+        <p className="text-[var(--mc-muted)] text-center text-sm mb-2">
           8 chapters. Real code. Real architecture. No filler.
+        </p>
+        <p className="text-[var(--mc-dim)] text-center text-xs mb-10">
+          Delivered as a web-based guide. ~15,000 words covering architecture, code samples, and operational patterns.
         </p>
         <div className="space-y-3">
           {chapters.map((ch) => (
@@ -258,6 +264,76 @@ export default function AgentPlaybookLanding() {
         </div>
       </section>
 
+      {/* PREVIEW */}
+      <section className="relative z-10 max-w-3xl mx-auto px-6 pb-20">
+        <h2 className="text-xl font-bold mb-6 text-center">
+          Preview: Chapter 01
+        </h2>
+        <div className="panel p-6 border-[var(--mc-border-bright)]">
+          <p className="font-[family-name:var(--font-mono)] text-xs text-[var(--mc-blue)] mb-3">
+            ARCHITECTURE OVERVIEW
+          </p>
+          <div className="text-sm text-[var(--mc-muted)] leading-relaxed space-y-3">
+            <p>
+              The system uses 7 specialized agents, each with a SOUL file that
+              defines identity, decision authority, communication rules, and hard
+              guardrails. No agent has full-stack authority — each owns a domain
+              and communicates through a shared queue.
+            </p>
+            <p>
+              The Entrepreneur agent sits at the top. It reads the north star
+              metric, reviews all agent outputs, assigns tasks, and makes
+              resource allocation decisions. It doesn&apos;t build anything — it
+              coordinates. The Coder, Content, Marketer, Sidehustle, QA, and
+              Support agents each have specific mandates and autonomy rules...
+            </p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-[var(--mc-border)] text-center">
+            <p className="text-xs text-[var(--mc-dim)]">
+              This is a small excerpt. The full chapter covers agent roles, communication topology, session lifecycle, and failure modes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="relative z-10 max-w-3xl mx-auto px-6 pb-20">
+        <h2 className="text-xl font-bold mb-6 text-center">
+          Questions
+        </h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: "What format is the playbook?",
+              a: "A web-based guide you access instantly after purchase. No PDF downloads or email drip — just open and read.",
+            },
+            {
+              q: "Is this just ChatGPT wrapper content?",
+              a: "No. This documents a real production system running right now. Every pattern, protocol, and architecture decision comes from building and operating a 7-agent system that ships real products.",
+            },
+            {
+              q: "Do I get updates?",
+              a: "Yes. As the system evolves, the guide updates. You get lifetime access to all future revisions.",
+            },
+            {
+              q: "What if I want a refund?",
+              a: "30-day money-back guarantee, no questions asked. Email support@arlobuilds.com and you'll get a full refund.",
+            },
+            {
+              q: "Can I share it with my team?",
+              a: "The purchase is a single-user license. Need team access? Email support@arlobuilds.com for team pricing.",
+            },
+          ].map((faq) => (
+            <div key={faq.q} className="panel p-5">
+              <h3 className="font-semibold text-sm text-[var(--mc-text)] mb-2">
+                {faq.q}
+              </h3>
+              <p className="text-sm text-[var(--mc-muted)]">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="relative z-10 max-w-3xl mx-auto px-6 pb-24 text-center">
         <div className="panel p-10 border-[var(--mc-border-bright)]">
@@ -297,6 +373,9 @@ export default function AgentPlaybookLanding() {
           </a>
           <p className="text-[var(--mc-dim)] text-xs mt-4">
             Powered by Stripe. Secure checkout. Instant delivery.
+          </p>
+          <p className="text-[var(--mc-dim)] text-xs mt-1.5">
+            30-day money-back guarantee. Not happy? Full refund, no questions asked.
           </p>
           <p className="text-[var(--mc-dim)] text-xs mt-2">
             Questions?{" "}
