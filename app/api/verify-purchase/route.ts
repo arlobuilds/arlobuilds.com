@@ -1,9 +1,19 @@
 import { NextResponse } from "next/server";
 
+function getOrigin(request: Request): string {
+  const host =
+    request.headers.get("x-forwarded-host") ||
+    request.headers.get("host") ||
+    new URL(request.url).host;
+  const proto = request.headers.get("x-forwarded-proto") || "https";
+  return `${proto}://${host}`;
+}
+
 export async function GET(request: Request) {
   const url = new URL(request.url);
+  const origin = getOrigin(request);
   const sessionId = url.searchParams.get("session_id");
-  const salesPage = new URL("/agent-playbook", url.origin);
+  const salesPage = new URL("/agent-playbook", origin);
 
   if (!sessionId) {
     return NextResponse.redirect(salesPage);
@@ -33,7 +43,7 @@ export async function GET(request: Request) {
 
     // Payment verified — set cookie and redirect to guide
     const response = NextResponse.redirect(
-      new URL("/agent-playbook/guide", url.origin)
+      new URL("/agent-playbook/guide", origin)
     );
     response.cookies.set("playbook_access", sessionId, {
       httpOnly: true,
