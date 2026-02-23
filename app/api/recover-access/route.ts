@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import Stripe from "stripe";
 
 function getOrigin(request: Request): string {
   const host =
@@ -40,29 +41,16 @@ export async function POST(request: Request) {
   }
 
   try {
-    const params = new URLSearchParams({
-      "customer_details[email]": email,
-      payment_status: "paid",
-      limit: "1",
+    const stripe = new Stripe(stripeKey);
+
+    const sessions = await stripe.checkout.sessions.list({
+      customer_details: { email },
+      status: "complete",
+      limit: 1,
     });
 
-    const res = await fetch(
-      `https://api.stripe.com/v1/checkout/sessions?${params.toString()}`,
-      { headers: { Authorization: `Bearer ${stripeKey}` } }
-    );
-
-    if (!res.ok) {
-      console.error("Stripe search failed:", res.status);
-      return NextResponse.json(
-        { message: "Unable to verify. Please try again or contact support@arlobuilds.com." },
-        { status: 500 }
-      );
-    }
-
-    const data = await res.json();
-
-    if (data.data && data.data.length > 0) {
-      const session = data.data[0];
+    if (sessions.data.length > 0) {
+      const session = sessions.data[0];
 
       console.log("ACCESS_RECOVERED", {
         session_id: session.id,
