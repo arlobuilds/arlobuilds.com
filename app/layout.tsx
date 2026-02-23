@@ -55,6 +55,8 @@ export default function RootLayout({
             __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');`,
           }}
         />
+        {/* Umami Analytics — self-hosted, privacy-friendly */}
+        <script async src="https://umami-production-5b90.up.railway.app/script.js" data-website-id="70ee40b7-8e10-4354-9dbe-140de7fb4947" />
       </head>
       <body className="antialiased">{children}</body>
       <script
