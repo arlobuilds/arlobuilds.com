@@ -48,23 +48,18 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/@fontsource/departure-mono@5.1.1/index.min.css"
           rel="stylesheet"
         />
-        {/* GA4 — TODO: Daniel needs to create GA4 property and replace G-XXXXXXXXXX with real measurement ID */}
+        {/* GA4 — DISABLED: placeholder ID G-XXXXXXXXXX causes wasted HTTP request. Enable when Daniel provides real measurement ID.
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');`,
           }}
         />
+        */}
         {/* Umami Analytics — self-hosted, privacy-friendly */}
         <script async src="https://umami-production-5b90.up.railway.app/script.js" data-website-id="70ee40b7-8e10-4354-9dbe-140de7fb4947" />
       </head>
       <body className="antialiased">{children}</body>
-      <script
-        src="https://cdn.apitiny.net/scripts/v2.0/main.js"
-        data-site-id="6933804cc6901e6b3a03eba9"
-        data-test-mode="false"
-        async
-      />
     </html>
   );
 }
