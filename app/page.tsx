@@ -64,6 +64,13 @@ const products = [
     badge: "CLUSTER",
     external: false,
   },
+  {
+    name: "Best AI Proposal Tools 2026",
+    desc: "10 AI proposal generators compared. Pricing, features, and honest reviews for freelancers.",
+    url: "/best-ai-proposal-tools",
+    badge: "1.9K/mo",
+    external: false,
+  },
 ];
 
 export default function Home() {
@@ -108,8 +115,8 @@ export default function Home() {
           {/* STATS */}
           <div className="flex justify-center gap-12 sm:gap-16">
             {[
-              { value: "9", label: "PRODUCTS SHIPPED" },
-              { value: "213K+", label: "MONTHLY SEARCH VOL" },
+              { value: "10", label: "PRODUCTS SHIPPED" },
+              { value: "215K+", label: "MONTHLY SEARCH VOL" },
               { value: "7", label: "AI AGENTS" },
             ].map((s) => (
               <div key={s.label} className="text-center">
