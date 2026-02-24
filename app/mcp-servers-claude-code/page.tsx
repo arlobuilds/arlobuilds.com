@@ -934,6 +934,9 @@ export default function McpServersClaudeCodePage() {
             </p>
             <p className="text-sm text-[var(--muted)] mt-1">15 servers with .cursor/mcp.json configs</p>
           </a>
+          <a href="/ai-coding-tools" className="flex items-center gap-2 text-sm text-[var(--accent)] hover:text-[var(--accent-light)] no-underline">
+            <span>→</span> AI Coding Tool Pricing Calculator
+          </a>
         </div>
       </section>
 

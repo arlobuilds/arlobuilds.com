@@ -856,6 +856,9 @@ export default function AiAgentFrameworksPage() {
             </p>
             <p className="text-sm text-[var(--muted)] mt-1">10 tools compared for Upwork &amp; freelancing</p>
           </a>
+          <a href="/ai-coding-tools" className="flex items-center gap-2 text-sm text-[var(--accent)] hover:text-[var(--accent-light)] no-underline">
+            <span>→</span> AI Coding Tool Pricing Calculator
+          </a>
         </div>
       </section>
 
