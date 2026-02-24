@@ -27,7 +27,7 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        source: "/(mcp-servers|mcp-servers-cursor|mcp-servers-claude-code|cursor-alternatives|ai-agent-frameworks|ai-prompt-library|seedance-pricing|best-ai-proposal-tools)",
+        source: "/(mcp-servers|mcp-servers-cursor|mcp-servers-claude-code|cursor-alternatives|ai-agent-frameworks|ai-prompt-library|seedance-pricing|best-ai-proposal-tools|ai-coding-tools)",
         headers: [
           {
             key: "Cache-Control",
