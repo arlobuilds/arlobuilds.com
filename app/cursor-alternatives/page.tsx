@@ -526,6 +526,12 @@ export default function CursorAlternativesPage() {
             >
               <span>→</span> Best AI Proposal Tools 2026
             </a>
+            <a
+              href="/ai-coding-tools"
+              className="flex items-center gap-2 text-sm text-[var(--accent)] hover:text-[var(--accent-light)] no-underline"
+            >
+              <span>→</span> AI Coding Tool Pricing Calculator
+            </a>
           </div>
         </div>
       </section>
