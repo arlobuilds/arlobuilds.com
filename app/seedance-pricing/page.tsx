@@ -638,6 +638,14 @@ export default function Home() {
           </a>
         </p>
       </footer>
+
+      {/* TinyAdz Script */}
+      <script
+        src="https://cdn.apitiny.net/scripts/v2.0/main.js"
+        data-site-id="6933804cc6901e6b3a03eba9"
+        data-test-mode="false"
+        async
+      />
     </div>
   );
 }

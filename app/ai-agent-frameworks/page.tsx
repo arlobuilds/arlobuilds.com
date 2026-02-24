@@ -883,6 +883,14 @@ export default function AiAgentFrameworksPage() {
           This is an independent guide. Not affiliated with LangChain, CrewAI, Microsoft, OpenAI, or any framework developer. This page contains ads.
         </p>
       </footer>
+
+      {/* TinyAdz Script */}
+      <script
+        src="https://cdn.apitiny.net/scripts/v2.0/main.js"
+        data-site-id="6933804cc6901e6b3a03eba9"
+        data-test-mode="false"
+        async
+      />
     </div>
   );
 }
